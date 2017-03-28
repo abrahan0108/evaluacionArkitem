@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+
+    <!-- TextView Login -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login ArkITem"
+        android:id="@+id/loginTextView"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="35dp"/>
+
+    <!-- EditText de Usuario -->
+
+    <EditText
+        android:id="@+id/usuarioEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginTextView"
+        android:paddingTop="32dp"
+        android:hint="Usuario"
+        android:inputType="textPersonName" />
+
+    <!-- EDitText Password -->
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usuarioEditText"
+        android:paddingTop="32dp"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <!-- Botón de login -->
+    <Button
+        android:id="@+id/boton_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordEditText"
+        android:layout_marginTop="32dp"
+        android:text="Login" />
+
+</RelativeLayout>
